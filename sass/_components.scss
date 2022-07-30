@@ -1,0 +1,318 @@
+//Variables
+$color-primario:#166490;
+
+
+.btn-Sesion{
+    width: 290.39px;
+    height: 50px;
+    border: none;
+    color: #ffff;
+    font-size: 19px;
+    background-color: $color-primario;
+    border-radius: 10px;
+    box-shadow: 0px 3.19111px 3.19111px rgba(0, 0, 0, 0.25);
+}
+.icon-Redes{
+    width: 65px;
+    height: 40px;
+    background-color:#f2f2f2;
+    border-radius: 13px;
+    i{
+       display: block;
+       text-align: center;
+       padding-top: 5.6px;
+    }
+}
+
+.icon-onBoarding{
+    height: 100px;
+    width: 110px;
+    background-color: #f2f2f2e8;
+    border-radius: 20px;
+    i{
+        font-size: 4.5rem;
+        padding: 2.5rem 1.5rem;
+        color: $color-primario;
+    }
+}
+.main-card{
+    width: 600px;
+    height: 330px;
+    background-color: #dddd;
+    display: flex;
+    box-shadow: 0px 3.19111px 3.19111px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem;
+    .mini-card{
+        width: 57%;
+        display: flex;
+        flex-direction: column;
+        .info-author{
+            display: flex;
+            justify-content: space-between;
+            img{
+                object-fit: contain;
+            }
+            .info-author-2{
+                display: flex;
+                flex-direction: column;
+                span{
+                    color: gray;
+                }
+            }
+        }
+        .quote{
+            padding-top: 20px;
+            width: 10px;
+        }
+        .iconos{
+            padding-top: 25px;
+            display: flex;
+            justify-content: space-around;
+            font-size: 1.4rem;
+            cursor: pointer;
+        }
+    }
+}   
+
+.min-Card-1{
+    width: 215px;
+    display: flex;
+    flex-direction: column;
+    .min-Card-2{
+        display: flex;
+        flex-direction: column;
+        height: 120px;
+        background-color:#F5F5F5;
+        border-radius: 10px;
+        padding-left: 10px;
+        span{
+            font-size: 20px;
+            color: gray;
+        }
+        i{
+            font-size: 21px;
+            color: rgba(255, 255, 0, 0.74);
+        }
+    }
+}
+.vendedor{
+    width: 200px;
+    height: 53px;
+    background-color: #F9F9F9;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0px 3.19111px 3.19111px rgba(0, 0, 0, 0.25);
+}
+.ratings{
+    width: 1000px;
+    height: 242px;
+    border: 1px solid #D8D8D8;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    .info-Ratings{
+        width: 400px;
+       
+    }
+}
+.main-Ratings{
+    width: 1178px;
+    height: 288px;
+    border: 1px solid #D8D8D8;
+    background-color: #FFFFFF;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    padding: 2.4rem;
+    .perfil-ratings{
+        display: flex;
+        .image-4{
+            padding-right: 20px;
+        }
+        .info-ratings-3{
+            p{
+                color: #595959;
+                font-weight: bold;
+            }
+           span{
+               color: gray;
+           }
+        }
+    }
+    .info-ratings-4{
+        display: flex;
+        margin-top: 20px;
+        align-items: center;
+        justify-content: center;
+        .image-7 img{
+            height: 88.5px;
+        }
+    }
+    .icons-ratings{
+        width: 200px;
+        display: flex;
+        justify-content: space-around;
+        font-size: 1.2rem;
+        cursor:pointer;
+        color: gray;
+    }
+}
+header{
+    width: 100%;
+    height: 100px;
+    .main-Header{
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        padding-bottom: 30px;
+        border-bottom: 1px solid gray;
+
+        .image-general{
+            display: flex;
+            gap: 30px;
+        }
+        .upload-product{
+            width: 164px;
+            height: 39px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: $color-primario;
+            border-radius: 10px;
+            cursor: pointer;
+            p{
+                margin: 0px;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+nav {
+    width: 100%;
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      li {
+        list-style: none;
+        padding-right: 20px;
+        padding-left: 20px;
+        a {
+          text-decoration: none;
+          color: black;
+          font-size: 15px;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+.footer{
+    width: 100%;
+    height: 504px;
+    display: flex;
+    padding-top: 26px;
+    background-color: $color-primario;
+    margin-top: 35px;
+    color: white;
+    .sec-1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding: 2rem;
+       p{
+           font-size: 18px;
+       }
+       span{
+            font-size: 18px;
+       }
+        .sec-iconos{
+            display: flex;
+            gap: 0.5rem;
+            .vendedor{
+                width: 90px;
+                color: black;
+                i{
+                    &:hover{
+                        color: #166490;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+.main-sec{
+        display: flex;
+        justify-content: center;
+        padding: 2rem;
+        gap: 4rem;
+
+        .sec-2{
+          ul{
+            margin: 0px;
+            padding: 0px;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            list-style: none;
+            li{
+              text-align: left;
+            }
+          }
+        }
+        .pseudo-sec-2{
+          padding-right: 23px;
+          text-align: center;
+          ul{
+            margin: 0px;
+            padding: 0px;
+            height: 320px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            list-style: none; 
+            li{
+              text-align: left;
+            }
+          }
+        }
+    }
+    .sec-3{
+      display: flex;
+      flex-direction: column;
+      padding-right: 30px;
+      .icons-contact{
+        gap: 1rem;
+      }
+    }
+}
+.image-libros{
+    height: 400px;
+    width: 100%;
+    background-image: url(../img/image-libros.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 20px;
+    span{
+        font-size: 2.5rem;
+        color: white;
+
+    }
+}

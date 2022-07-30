@@ -1,0 +1,228 @@
+@use "components" as comp;
+@use "global";
+.main{
+    width: 100%;
+    .section-1{
+        width: 100%;
+        display: flex;
+        margin-top: 94px;
+        .sec-text{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 2.5rem;
+            span{
+                color: comp.$color-primario;   
+            }
+            .quote{
+                color: gray;
+            }
+            h4{
+                font-size: 2.5rem;
+                color: #595959;
+            }
+        }
+        .sec-image{
+            img{
+               height: 340px; 
+            }
+        }
+    }
+    .section-2{
+        width: 100%;
+        height: 299px;
+        background-color: comp.$color-primario;
+        display: flex;
+        margin-top: 80px;
+        border-radius: 15px;
+        gap: 2.5rem;
+        padding: 2rem;
+        .main-onboarding{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .icon-onBoarding{
+                i{
+                    font-size: 3.8rem;
+                }
+            }
+            .card-info{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                gap: 0.5rem;
+                color: white;
+                margin-top: 10px;
+            }
+        }   
+    }
+}
+header{
+    .main-Header{
+        .upload-product{
+            span{
+                padding-left: 8px;
+            }
+        }
+    }
+}
+.section-3{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    h3{
+       margin-bottom: 40px;
+    }
+    .sec-card{
+        width: 100%;
+        display: flex;
+        gap: 3rem;
+        .main-card{
+            gap: 1.2rem;
+           .mini-card{
+               .info-author{
+                   h3{
+                        margin: 0px;
+                        font-size: 1.5rem;
+                   }
+               }
+               .iconos{
+                   i{
+                       &:hover{
+                           color: comp.$color-primario;
+                       }
+                   }
+               }
+            } 
+        }
+    }
+}
+.section-4{
+    width: 100%;
+    .sec-text-categories{
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: center;
+            align-items: center;
+            li{
+                width: 100%;
+                height: 30px;
+                text-align: center;
+                cursor: pointer;
+                &:hover{
+                    border-radius: 20px;
+                    background-color: comp.$color-primario;
+                    color: white;
+                }
+            }
+        }
+    }
+    .sec-movies-categories{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+
+        .min-Card-1{
+           .image-2{
+               img{
+                   height: 256px;
+               }
+           }
+        }
+        .min-Card-2{
+           width: 151px;
+           h4{
+               font-size: 1.3rem;
+           }
+           span{
+               font-size: 1.1rem;
+           }
+           div{
+               i{
+                   color: comp.$color-primario;
+               }
+           }
+        }
+    }
+}
+.image-libros{
+    height: 340px;
+    width: 100%;
+    background-image: url(../img/image-libros.png);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    span{
+        font-size: 2.5rem;
+        color: white;
+    }
+}
+.section-Suscribe{
+    width: 100%;
+    height: 255px;
+    background-color: comp.$color-primario;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 50px;
+    .input-1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .input{
+            max-width: 40%;
+        }
+    }
+}
+
+/* MediaQueries */
+@media screen and(max-width:768px){
+    .section-1{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 75px;
+        .sec-text{
+            text-align: center;
+            align-items: center;
+        }
+        .sec-image{
+            display: none;
+        }
+    }
+    header{
+        .main-Header{
+            width: 100%;
+            flex-direction: column;
+            .image-general{
+                display: none;
+            }
+            .upload-product{
+                display: block;
+                padding-top: 7.5px;
+                padding-left: 8px;
+            }
+        }
+
+    }
+    nav{
+        ul{
+            display: none;
+        }
+    }
+}
+
